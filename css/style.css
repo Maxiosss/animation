@@ -1,0 +1,47 @@
+.container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    top: 0%;
+    left: 0%;
+    animation: box-t 4s ease-in-out 1s infinite normal;
+}
+@keyframes box-t{
+    0%{
+        top: 0%;
+        left: 1%;
+        background-color: red;
+    }
+    25%{
+        background-color: purple;
+    }
+    50%{
+        top: 65%;
+        left: 1%;
+        background-color: blue;
+    }
+    70%{
+        top: 65%;
+        left: 60%;
+        background-color: green;
+    }
+    85%{
+        top: 0%;
+        left: 60%;
+        background-color: yellowgreen;
+    }
+    95%{
+        background-color: orangered;
+    }
+    100%{
+        top: 0%;
+        left: 1%;
+        background-color:red;
+    }
+}
